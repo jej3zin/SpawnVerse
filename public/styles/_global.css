@@ -1,0 +1,61 @@
+/* ========== GLOBALS ========== */
+body {
+  background: var(--bg-01);
+  color: var(--text-01);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  transition: var(--anima-01);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--anima-01);
+}
+
+a:hover {
+  color: var(--brand-01);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+button:focus {
+  outline: none;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+textarea {
+  resize: vertical;
+}
+::placeholder {
+  color: var(--text-03);
+  opacity: 1;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--bg-03);
+  margin: var(--space-4) 0;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: var(--bg-03-2);
+}

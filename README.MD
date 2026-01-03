@@ -1,28 +1,28 @@
-<h1>⚡| Dark Dragon</h1>
+# ⚡| SpawnVerse
 
-<h2>🌐| Description</h2>
-<p>Site de jogos, inspirado na steam. Contendo alguns componentes interativos.</p>
+SpawnVerse é um site de jogos semelhante a Steam, Epic Games.
 
-<br>
+- Usando API RAWP para conteúdos
+- Preços/Descontos
+- Lançamentos
 
-<div aligs="center">
-  <img align="center" alt="HTML" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="CSS" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-</div>
+---
 
-<h2>⚖️| Licence</h2>
-<b>This project is under MIT license.</b>
+## 🎯| Objetivo
 
-<h2>😎| Credit</h2>
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/jej3zin">
-        <img src="./Asset/Picture_Offical.png" width="100px;" alt="Foto do Jean"/><br>
-        <sub>
-          <b>Jean de Oliveira</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
+Espaço dedicado aos gamers
+
+- Promoções
+- Em Alta
+- Novas Atualizações
+
+## 🛠️| Ferramentas
+
+- HTML
+- CSS
+- JAVASCRIPT
+  > Não há frameworks.
+
+## 📓| Notas finais
+
+Este é apenas um projeto pessoal.

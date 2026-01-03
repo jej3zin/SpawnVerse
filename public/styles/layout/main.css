@@ -1,0 +1,33 @@
+.main {
+  padding-top: var(--header-height);
+  padding: var(--padd-01);
+}
+.slide-banner {
+  height: 30vh;
+  width: 100%;
+  border: 1px solid red;
+  border-radius: var(--radius-02);
+}
+.slide-banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-02);
+}
+
+/* Slides */
+.global-divisor {
+  height: 2px;
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 1px;
+  background: var(--bg-05);
+}
+.sect-01 {
+  margin-top: 1rem;
+}
+.sect-01 h2 {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--brand-04);
+}

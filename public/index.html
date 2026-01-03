@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpawnVerse</title>
+    <link rel="icon" type="image/png" href="/asset/favicon.png" />
+    <link rel="stylesheet" href="/styles/index.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div id="preloader">
+      <span class="loader"></span>
+    </div>
+
+    <div id="content">
+      <header class="head">
+        <div class="head-box-left">
+          <img
+            src="/asset/briefing/logo.png"
+            alt="logotipo"
+            class="head-logo"
+          />
+
+          <nav class="head-nav">
+            <a href="/" class="headNav-link">Loja</a>
+            <a href="/" class="headNav-link">Comunidade</a>
+            <a href="/" class="headNav-link">Chat</a>
+            <a href="/" class="headNav-link">Labs</a>
+          </nav>
+        </div>
+
+        <nav class="subnav">
+          <a class="subnav-link" href="/">Recomendados</a>
+          <a class="subnav-link" href="/">Categorias</a>
+          <button class="subnav-link">
+            <ion-icon name="list"></ion-icon>Lista de desejos
+            <span id="wishList">0</span>
+          </button>
+          <button class="subnav-link">
+            <ion-icon name="cart"></ion-icon>Carrinho
+            <span id="cartList">0</span>
+          </button>
+        </nav>
+
+        <div class="head-box-right">
+          <div class="search-box">
+            <label for="searchInput" class="sr-only">Buscar</label>
+            <ion-icon name="search" class="search-icon"></ion-icon>
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Buscar..."
+              autocomplete="off"
+            />
+            <ion-icon name="close-circle" class="clear-icon"></ion-icon>
+          </div>
+
+          <div id="searchResults" class="search-results"></div>
+
+          <button class="head-space-user">
+            <span class="username"></span>
+            <img src="/asset/avatar.png" alt="Avatar" />
+
+            <div id="dropdownuser" class="dropdown-menu">
+              <a href="/" class="dropdown-link"
+                ><ion-icon name="person"></ion-icon>Perfil</a
+              >
+              <a href="/" class="dropdown-link"
+                ><ion-icon name="sunny"></ion-icon>Tema</a
+              >
+              <a href="/" class="dropdown-link"
+                ><ion-icon name="language"></ion-icon>Idioma</a
+              >
+
+              <div class="dropdown-divider"></div>
+
+              <a href="/" class="dropdown-link"
+                ><ion-icon name="settings"></ion-icon>Configurações</a
+              >
+              <a href="/" class="dropdown-link"
+                ><ion-icon name="help-buoy"></ion-icon>Ajuda</a
+              >
+              <a href="/" class="dropdown-link"
+                ><ion-icon name="cafe"></ion-icon>Feedback</a
+              >
+
+              <div class="dropdown-divider"></div>
+
+              <a href="/" class="dropdown-link"
+                ><ion-icon name="log-out"></ion-icon>Sair</a
+              >
+            </div>
+          </button>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="slide-banner">
+          <img src="" alt="slide-banner" />
+        </section>
+
+        <section class="sect-01">
+          <h2>Lançamentos</h2>
+
+          <div class="slide-inline-01"></div>
+        </section>
+
+        <div class="global-divisor"></div>
+
+        <section class="sect-01">
+          <h2>Descontos</h2>
+
+          <div class="slide-gallery-01"></div>
+        </section>
+
+        <div class="global-divisor"></div>
+
+        <section class="sect-01">
+          <h2>Descubra Mais</h2>
+
+          <div class="slide-list-01"></div>
+        </section>
+
+        <div class="global-divisor"></div>
+
+        <section class="sect-01">
+          <h2>SpawnVerse Recomenda!</h2>
+
+          <div class="slide-inline-01"></div>
+        </section>
+
+        <div class="global-divisor"></div>
+
+        <article class="column-01">
+          <section class="sect-01">
+            <h2>Simulação</h2>
+
+            <div class="slide-gallery-2"></div>
+          </section>
+
+          <section class="sect-01">
+            <h2>Ranking</h2>
+
+            <div class="slide-ranking-01"></div>
+          </section>
+        </article>
+
+        <div class="global-divisor"></div>
+      </main>
+
+      <footer class="foot">
+        <header class="foot-header">
+          <a href="/index.html" class="foot-Logo">
+            <img
+              src="/public/asset/Images/Logotipo-Darkdragon.png"
+              alt="SpawnVerse"
+            />
+          </a>
+
+          <div class="foot-Links">
+            <div>
+              <h4>Plataforma</h4>
+              <ul class="foot-ul">
+                <a href="/index.html">Loja</a>
+                <a href="/public/pages/community/community.html">Comunidade</a>
+                <a href="/public/pages/chat.html">Chat</a>
+                <a href="#">Labs</a>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Categorias</h4>
+              <ul class="foot-ul">
+                <a href="#">Anime</a>
+                <a href="#">RPG</a>
+                <a href="#">Simulação</a>
+                <a href="#">Zumbis</a>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Suporte</h4>
+              <ul class="foot-ul">
+                <a href="#">Central de ajuda</a>
+                <a href="#">Status do servidor</a>
+                <a href="#">Reportar problema</a>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Empresa</h4>
+              <ul class="foot-ul">
+                <a href="#">Sobre</a>
+                <a href="#">Carreiras</a>
+                <a href="#">Termos de uso</a>
+                <a href="#">Privacidade</a>
+              </ul>
+            </div>
+          </div>
+        </header>
+
+        <footer class="foot-footer">
+          <div class="foot-Socials">
+            <a href="#"><ion-icon name="logo-discord"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitch"></ion-icon></a>
+          </div>
+
+          <p>&copy; 2025-2027 SpawnVerse. Todos os direitos reservados.</p>
+        </footer>
+      </footer>
+    </div>
+
+    <script type="module" src="/js/components/loader.js"></script>
+    <script type="module" src="/js/components/searchbar.js"></script>
+    <script type="module" src="/js/layout/header.js"></script>
+  </body>
+</html>

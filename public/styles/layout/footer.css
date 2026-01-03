@@ -1,0 +1,46 @@
+.foot {
+  margin-top: 1rem;
+  padding: var(--padd-01);
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--brand-01);
+}
+.foot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-ul {
+  display: flex;
+  flex-direction: column;
+}
+.foot-Links {
+  display: flex;
+  gap: 3rem;
+}
+.foot-Links h4 {
+  margin-bottom: 0.5rem;
+  color: var(--text-03);
+}
+.foot-Links a {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+.foot-footer {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap-03);
+}
+.foot-Socials ion-icon {
+  font-size: 1.25rem;
+}
+.foot-Socials {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-04);
+}
+.foot p {
+  font-size: 0.9rem;
+  color: var(--text-03);
+}
