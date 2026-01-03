@@ -44,3 +44,7 @@
   font-size: 0.9rem;
   color: var(--text-03);
 }
+.foot-Logo {
+  width: 13rem;
+  object-fit: cover;
+}

@@ -18,7 +18,8 @@
   gap: var(--gap-05);
 }
 .head-logo {
-  width: min-content;
+  width: 10rem;
+  object-fit: cover;
 }
 
 /* Nav */
