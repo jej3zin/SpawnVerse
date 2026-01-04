@@ -15,6 +15,35 @@
   border-radius: var(--radius-02);
 }
 
+/* Card */
+.game-card {
+  background: var(--bg-02);
+  border-radius: var(--radius-02);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.game-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.game-info {
+  padding: 0.75rem;
+}
+
+.price {
+  color: var(--brand-04);
+  font-weight: bold;
+}
+
 /* Slides */
 .global-divisor {
   height: 2px;
@@ -34,24 +63,59 @@
 
 /* ========= SLIDE INLINE ========= */
 .slide-inline-01 {
+  height: 12rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 14rem;
+  gap: 1rem;
+  overflow-x: auto;
   border: 1px solid red;
 }
 
 /* ========= SLIDE GALLERY ========= */
 .slide-gallery-01 {
+  height: 24rem;
+  margin-top: 0.5rem;
+  position: relative;
   border: 1px solid red;
 }
 .slide-gallery-2 {
+  margin-top: 0.5rem;
+  position: relative;
   border: 1px solid blue;
 }
 
 /* ========= SLIDE LIST ========= */
 .slide-list-01 {
+  height: auto;
+  width: 100%;
+  margin-top: 0.5rem;
+  position: relative;
   border: 1px solid red;
 }
 
 /* ========= SLIDE RANK ========= */
 .slide-ranking-01 {
+  margin-top: 0.5rem;
+  position: relative;
   border: 1px solid red;
 }
 /* ========= COLUMNS ========= */
+.column-01 {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 1rem;
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 999;
+}
+.modal.open {
+  display: block;
+}

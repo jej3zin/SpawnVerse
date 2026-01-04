@@ -1,7 +1,10 @@
-// js/components/searchbar.js
+// features/search.js
+import { fetchGames } from '../api/rawg.js';
+import { createGameCard } from '../components/gameCard.js';
+
 const input = document.getElementById('searchInput');
-const resultsBox = document.getElementById('searchResults');
 const clearIcon = document.querySelector('.clear-icon');
+const results = document.getElementById('searchResults');
 
 let debounceTimer;
 
@@ -12,12 +15,15 @@ if (input) {
     const q = input.value.trim();
 
     if (q.length < 2) {
-      // busca só quando >=2 chars
+      results.innerHTML = '';
       clearResults();
       return;
     }
 
-    debounceTimer = setTimeout(() => search(q), 300);
+    debounceTimer = setTimeout(async () => {
+      const data = await fetchGames(`search=${input.value}`);
+      results.innerHTML = data.results.slice(0, 5).map(createGameCard).join('');
+    }, 400);
   });
 }
 
