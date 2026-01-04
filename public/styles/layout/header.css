@@ -211,17 +211,17 @@
   position: absolute;
   top: 120%;
   right: 0;
-  background: var(--bg-02-2);
-  border: var(--border-01);
-  border-radius: var(--radius-02);
-  backdrop-filter: var(--blur-4);
-  box-shadow: var(--shadow-03);
   opacity: 0;
   pointer-events: none;
-  transform: translateY(8px);
+  border: var(--border-02);
+  background: var(--bg-02-2);
+  box-shadow: var(--shadow-03);
+  backdrop-filter: var(--blur-4);
+  border-radius: var(--radius-02);
+  transform: translateY(12px);
   transition: var(--anima-01);
 }
-.dropdown-menu.show {
+.dropdown-menu.showDropdown {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);

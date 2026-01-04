@@ -8,6 +8,10 @@ const results = document.getElementById('searchResults');
 
 let debounceTimer;
 
+function clearResults() {
+  if (results) results.innerHTML = '';
+}
+
 if (input) {
   input.addEventListener('input', () => {
     clearTimeout(debounceTimer);
@@ -15,14 +19,20 @@ if (input) {
     const q = input.value.trim();
 
     if (q.length < 2) {
-      results.innerHTML = '';
       clearResults();
       return;
     }
 
     debounceTimer = setTimeout(async () => {
-      const data = await fetchGames(`search=${input.value}`);
-      results.innerHTML = data.results.slice(0, 5).map(createGameCard).join('');
+      try {
+        const data = await fetchGames(`search=${q}`);
+        results.innerHTML = data.results
+          .slice(0, 5)
+          .map(createGameCard)
+          .join('');
+      } catch (err) {
+        console.error('Erro no search:', err);
+      }
     }, 400);
   });
 }
@@ -33,7 +43,17 @@ clearIcon?.addEventListener('click', () => {
 });
 
 document.addEventListener('click', (e) => {
-  if (!resultsBox.contains(e.target) && e.target !== input) {
+  if (!results.contains(e.target) && e.target !== input) {
     clearResults();
   }
+});
+/* Click and open */
+document.addEventListener('click', (e) => {
+  const card = e.target.closest('.game-card');
+  if (!card) return;
+
+  const id = card.dataset.id;
+  if (!id) return;
+
+  openGameModal(id);
 });

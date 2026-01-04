@@ -63,7 +63,7 @@
 
 /* ========= SLIDE INLINE ========= */
 .slide-inline-01 {
-  height: 12rem;
+  height: 22rem;
   width: 100%;
   margin-top: 0.5rem;
   display: grid;
@@ -71,20 +71,16 @@
   grid-auto-columns: 14rem;
   gap: 1rem;
   overflow-x: auto;
-  border: 1px solid red;
 }
 
 /* ========= SLIDE GALLERY ========= */
 .slide-gallery-01 {
-  height: 24rem;
   margin-top: 0.5rem;
   position: relative;
-  border: 1px solid red;
 }
 .slide-gallery-2 {
   margin-top: 0.5rem;
   position: relative;
-  border: 1px solid blue;
 }
 
 /* ========= SLIDE LIST ========= */
@@ -93,14 +89,12 @@
   width: 100%;
   margin-top: 0.5rem;
   position: relative;
-  border: 1px solid red;
 }
 
 /* ========= SLIDE RANK ========= */
 .slide-ranking-01 {
   margin-top: 0.5rem;
   position: relative;
-  border: 1px solid red;
 }
 /* ========= COLUMNS ========= */
 .column-01 {
@@ -114,8 +108,93 @@
   position: fixed;
   inset: 0;
   display: none;
+  align-items: center;
+  justify-content: center;
   z-index: 999;
+  backdrop-filter: var(--blur-1);
+  background: var(--bg-02-2);
 }
 .modal.open {
-  display: block;
+  display: flex;
+}
+.modal-content {
+  transform: scale(0.92);
+}
+.modal.open .modal-content {
+  transform: scale(1);
+}
+
+.close-modal {
+  color: var(--text-01);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+.close-modal:hover {
+  color: var(--brand-01);
+}
+.close-modal ion-icon {
+  font-size: 1.5rem;
+}
+/* Loader */
+.modal-loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--brand-01);
+  border-top-color: var(--text-01);
+  border-radius: 50%;
+  margin: 3rem auto;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper-modal {
+  height: 80vh;
+  width: 80vw;
+  padding: 0.75rem;
+  display: flex;
+  gap: var(--gap-03);
+  border: var(--border-01);
+  border-radius: var(--radius-03);
+  background: var(--bg-02);
+}
+.modal-boximg {
+  width: 50%;
+  padding-right: 0.75rem;
+  border-right: var(--border-02);
+}
+.modal-boximg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal-infos {
+  width: 50%;
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-header h2 {
+  color: var(--brand-01);
+}
+.rating {
+  color: yellow;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-01);
+}
+
+.modal-content p {
+  color: var(--text-02);
+}
+.modal-main-header {
 }

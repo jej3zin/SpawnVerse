@@ -62,7 +62,7 @@
 
           <div id="searchResults" class="search-results"></div>
 
-          <button class="head-space-user">
+          <button id="openHeadDrop" class="head-space-user">
             <span class="username"></span>
             <img src="/asset/sv-logo.webp" alt="Avatar" />
 
@@ -107,7 +107,7 @@
         <section class="sect-01">
           <h2>Lançamentos</h2>
 
-          <div class="slide-inline-01"></div>
+          <div id="releases" class="slide-inline-01"></div>
         </section>
 
         <div class="global-divisor"></div>
@@ -131,7 +131,7 @@
         <section class="sect-01">
           <h2>SpawnVerse Recomenda!</h2>
 
-          <div class="slide-inline-01"></div>
+          <div id="recommended" class="slide-inline-01"></div>
         </section>
 
         <div class="global-divisor"></div>
@@ -214,8 +214,13 @@
       </footer>
     </div>
 
+    <div id="gameModal" class="modal">
+      <button id="icon-close" class="close-modal" aria-label="Fechar Modal">
+        <ion-icon name="close"></ion-icon>
+      </button>
+      <div class="modal-content"></div>
+    </div>
+
     <script type="module" src="/js/main.js"></script>
-    <script type="module" src="/js/components/loader.js"></script>
-    <script type="module" src="/js/layout/header.js"></script>
   </body>
 </html>

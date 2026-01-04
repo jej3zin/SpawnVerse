@@ -83,7 +83,7 @@
   /* ===== SHADOWS ===== */
   --shadow-01: 0 6px 10px rgba(255, 255, 255, 0.1);
   --shadow-02: 0 4px 10px rgba(0, 0, 0, 0.18);
-  --shadow-03: 0 8px 18px rgba(152, 83, 255, 0.25);
+  --shadow-03: 0 8px 18px #02c60040;
   --shadow-brand: 0 0 14px 3px rgba(255, 118, 0, 0.24);
   --shadow-danger: 0 0 12px 3px rgba(179, 58, 54, 0.18);
 
