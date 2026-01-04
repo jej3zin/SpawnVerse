@@ -1,11 +1,10 @@
 .main {
-  padding-top: var(--header-height);
   padding: var(--padd-01);
+  padding: var(--header-height);
 }
 .slide-banner {
   height: 30vh;
   width: 100%;
-  border: 1px solid red;
   border-radius: var(--radius-02);
 }
 .slide-banner img {
