@@ -30,3 +30,28 @@
   padding-bottom: 0.25rem;
   border-bottom: 1px solid var(--brand-04);
 }
+/* ========= SLIDES ========= */
+
+/* ========= SLIDE INLINE ========= */
+.slide-inline-01 {
+  border: 1px solid red;
+}
+
+/* ========= SLIDE GALLERY ========= */
+.slide-gallery-01 {
+  border: 1px solid red;
+}
+.slide-gallery-2 {
+  border: 1px solid blue;
+}
+
+/* ========= SLIDE LIST ========= */
+.slide-list-01 {
+  border: 1px solid red;
+}
+
+/* ========= SLIDE RANK ========= */
+.slide-ranking-01 {
+  border: 1px solid red;
+}
+/* ========= COLUMNS ========= */
